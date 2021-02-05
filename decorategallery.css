@@ -1,0 +1,201 @@
+
+
+/* nav bar */
+.dropdownmenu ul, .dropdownmenu li {
+	margin: 0;
+    padding: 0;
+}
+
+.dropdownmenu ul {
+	background: gray;
+	list-style: none;
+	width: 100%;
+}
+.dropdownmenu li {
+	float: left;
+	position: relative;
+	width:auto;
+}
+.dropdownmenu a {
+	background: #30A6E6;
+	color: #FFFFFF;
+	display: block;
+	font: bold 12px/20px sans-serif;
+	padding: 10px 115px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+.dropdownmenu li:hover a {
+	background:orange;
+}
+#submenu {
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 35px;
+	visibility: hidden;
+	z-index: 1;
+}
+li:hover ul#submenu {
+	opacity: 1;
+	top: 40px;	
+	visibility: visible;
+}
+#submenu li {
+	float: none;
+	width: 100%;
+}
+#submenu a:hover {
+	background:orange;
+}
+#submenu a {
+	background-color:#30A6E6;
+}
+/* end of nav bar */
+
+        /* Photo */
+        .image {
+            -webkit-box-shadow:  0px 0px 2px 4px rgba(0, 0, 0, 0.1);
+                    box-shadow:  0px 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .image h2 {
+            font-size: 16px;
+        }
+        .image img {
+            min-height:100%;
+            max-height:100%;
+            border-left:10px solid white;
+            border-right:10px solid white;
+            border-top:10px solid white;
+            -webkit-box-sizing: border-box; 
+            -moz-box-sizing: border-box; 
+            box-sizing: border-box; 
+        }
+        
+        .zoom-on-hover {
+            transition: all 0.5s ease-in-out;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+        }
+        .zoom-on-hover:hover {
+            -moz-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+        
+        /* Rotate the images */
+        .rotate-right {
+            -moz-transform:rotate(2deg);
+            -webkit-transform: rotate(2deg);
+            -o-transform:rotate(2deg);
+            -ms-transform:rotate(2deg);
+            transform:rotate(2deg);
+       }
+       .rotate-left {
+            -moz-transform:rotate(-2deg);
+            -webkit-transform: rotate(-2deg);
+            -o-transform:rotate(-2deg);
+            -ms-transform:rotate(-2deg);
+            transform:rotate(-2deg);
+       }
+       
+        .caption {
+            color:#999999;
+            background: white;
+            font-style:italic;
+        }
+        .caption h2 {
+            font-size:20px;
+        }
+            
+       
+        */
+        body, html {
+            margin: 0;
+            padding: 0
+        }
+        p{
+            font-size: 24px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        a {
+            font-size: 24px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        h1 {
+            font-size: 24px;
+            font-style:italic;
+            color: orange;
+            opacity: 0.7;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        h2 {
+            font-size: 20px;
+         
+        }
+        h3 {
+            font-size: 18px;
+        }
+        h4 {
+            font-size: 16px;
+        }
+        ul {
+            margin-left: 0;
+            padding-left: 1em;
+            line-height: 1.5em;
+        }
+        hr {
+            clear: both;
+        }
+    
+        /* Layout */
+       
+        /* Header */
+        header {
+            padding: 30px 0;
+            text-align: left;
+        }
+        header h1.logo {
+            display: inline-block;
+            margin: 0;
+        }
+        header h2.title {
+            display: inline-block;
+            float: right;
+            padding: 4%;
+        }
+        
+        /* Photo */
+        .image {
+            z-index: 2;
+            position: relative;
+            overflow: hidden;
+        }
+        .image img {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .image h2 {
+            margin: 0;
+        }
+        
+        /* Caption */
+        .caption {
+            margin: 0;
+            padding: 20px;
+            width: 100%;
+            display: block;
+            -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+            -moz-box-sizing: border-box; /* Firefox, other Gecko */
+            box-sizing: border-box; /* Opera/IE 8+ */
+        }
+        
